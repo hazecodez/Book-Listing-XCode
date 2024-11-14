@@ -11,17 +11,17 @@ const App = () => {
   }, []);
 
   const fetchBooks = async () => {
-    const response = await axios.get("http://localhost:5000/api/books");
+    const response = await axios.get("https://book-listing-app-2sip.onrender.com/api/books");
     setBooks(response.data);
   };
 
   const addBook = async (book) => {
-    await axios.post("http://localhost:5000/api/books", book);
+    await axios.post("https://book-listing-app-2sip.onrender.com/api/books", book);
     fetchBooks();
   };
 
   const deleteBook = async (id) => {
-    await axios.delete(`http://localhost:5000/api/books/${id}`);
+    await axios.delete(`https://book-listing-app-2sip.onrender.com/api/books/${id}`);
     fetchBooks();
   };
 
