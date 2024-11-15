@@ -11,20 +11,20 @@
    - Method: POST
    - Body: Select "raw" and "JSON" format, then provide the following JSON:
 ````
-```
+
    {
-  "title": "Book Title",
-  "author": "Author Name",
-  "description": "Book description"
-}
-```
+      "title": "Book Title",
+      "author": "Author Name",
+      "description": "Book description"
+   }
+
 ````
    - Description: This endpoint adds a new book to the database.
    - Expected Response: The added book’s details, including an automatically generated _id.
 
 
 3. **Delete a Book by ID**
-   - URL : [/https://book-listing-app-2sip.onrender.com/api/books](https://book-listing-app-2sip.onrender.com/api/books/{id})
+   - URL : [/https://book-listing-app-2sip.onrender.com/api/books/{id}](https://book-listing-app-2sip.onrender.com/api/books/{id})
    - Method: DELETE
    - Replace {id} with the ID of the book you want to delete.
    - Description: This endpoint deletes a specific book from the database.
