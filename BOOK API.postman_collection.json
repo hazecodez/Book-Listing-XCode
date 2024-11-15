@@ -17,7 +17,7 @@
 		{
 			"name": "Add a new Book",
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": []
 			},
 			"response": []
@@ -25,7 +25,7 @@
 		{
 			"name": "Delete a Book by ID",
 			"request": {
-				"method": "GET",
+				"method": "DELETE",
 				"header": []
 			},
 			"response": []
